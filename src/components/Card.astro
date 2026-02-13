@@ -1,0 +1,29 @@
+---
+const { title, img, subtitle, shape } = Astro.props;
+---
+
+<section class="section">
+  <div class="card">
+    <img class={shape} src={img} alt="" />
+    <h3>{title}</h3>
+    <p>{subtitle}</p>
+  </div>
+</section>
+
+<style>
+  .round {
+    border-radius: 999px;
+  }
+</style>
+
+<style>
+  p {
+    color: rgb(10, 225, 150);
+    text-align: end;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+
+  section {
+    display: flex;
+  }
+</style>

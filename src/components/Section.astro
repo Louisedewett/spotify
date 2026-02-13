@@ -1,0 +1,21 @@
+---
+const { title } = Astro.props;
+---
+
+<section class="section">
+  <header>
+    <h2>{title}</h2>
+    <a href="/#">See all</a>
+  </header>
+  <div class="list">
+    <slot />
+  </div>
+</section>
+
+<style>
+  .list {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+  }
+</style>
